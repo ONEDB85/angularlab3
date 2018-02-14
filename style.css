@@ -1,0 +1,80 @@
+body {
+
+    background: linear-gradient(to right, #cb356b 0%, #bd3f32 100%);
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+
+    background-color: white;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 50px 20px 50px;
+    border-radius: 5px;
+}
+
+.addTask {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 15px;
+    color: white;
+    background-color: #cb356b;
+    border: none;
+    height: 35px;
+    opacity: 0.4;
+    border-radius: 5px;
+}
+
+.addTask:hover {
+
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.material-icons {
+    float: right;
+    clear: right;
+    font-size: 14px !important;
+    cursor: pointer;
+}
+
+.material-icons:hover {
+    color: red;
+}
+
+li {
+
+    padding-bottom: 15px;
+}
+
+h1 {
+
+    margin-bottom: 0px;
+}
+
+
+p {
+
+    margin-top: 0px;
+}
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    border-color: 1px solid grey;
+    opacity: 0.6;
+}
+
+input:hover {
+	
+    border-color: 1px solid black;
+    opacity: 1;
+}
