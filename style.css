@@ -1,5 +1,4 @@
 body {
-
     background: linear-gradient(to right, #cb356b 0%, #bd3f32 100%);
 }
 
@@ -10,7 +9,6 @@ body {
 }
 
 .form {
-
     background-color: white;
     margin-top: 150px;
     display: flex;
@@ -33,7 +31,6 @@ body {
 }
 
 .addTask:hover {
-
     opacity: 1;
     cursor: pointer;
 }
@@ -51,7 +48,6 @@ body {
 }
 
 li {
-
     padding-bottom: 15px;
 }
 
@@ -64,17 +60,19 @@ h1 {
 p {
 
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 input {
+    margin-bottom: 10px;
     border-radius: 5px;
     height: 30px;
     border-color: 1px solid grey;
     opacity: 0.6;
+    width: 95%;
 }
 
 input:hover {
-	
     border-color: 1px solid black;
     opacity: 1;
 }
