@@ -6,19 +6,20 @@
 
         controller: function (TaskService) {
 
-            var vm = this;
-            vm.addTask = function (task) {
-                if (task && vm === vm) {
-                    vm.taskList.push(task);
-                    document.getElementById("addInput").value = "";
+            var $ctrl = this;
+            $ctrl.addTask = function (task) {
+
+                if (task) {
+                    $ctrl.taskList.push(task);
+                    $ctrl.task = "";
                 };
 
             }
-            vm.removeTask = function ($index) {
-                vm.taskList.splice($index, 1);
+            $ctrl.removeTask = function ($index) {
+                $ctrl.taskList.splice($index, 1);
             };
 
-            vm.taskList = TaskService.getData();
+            $ctrl.taskList = TaskService.getData();
         }
     }
 

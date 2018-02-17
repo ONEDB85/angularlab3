@@ -3,12 +3,11 @@
 <ol>
 
     
-        <li hover-state ng-repeat="listItem in $ctrl.taskList | filter:search track by $index ">{{listItem}}
+        <li hover-state ng-repeat="task in $ctrl.taskList | filter:search track by $index ">{{task}}
             <i class="material-icons" class="cancel" ng-click="$ctrl.removeTask($index)">close</i>
         </li>
     
 
 </ol>
-<input id="addInput" type="text" placeholder=" Add your to do" ng-model="task">
-
-<button class="addTask" ng-click="$ctrl.addTask(task);">Add</button>
+<input id="addInput" type="text" placeholder=" Add your to do" ng-model="$ctrl.task">
+<button class="addTask" ng-click="$ctrl.addTask($ctrl.task);">Add</button>
