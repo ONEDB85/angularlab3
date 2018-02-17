@@ -1,12 +1,13 @@
-(function(){
+(function () {
+    var taskForm = {
+        templateUrl: "templates/taskForm.html"
+    }
+   
+   
+   
 
-var taskForm = {
+
     
-    controller: "FormController",
-    templateUrl: "templates/taskForm.html"
-}
-angular.module("app")
-.component("taskForm",taskForm);
-
-
+    angular.module("app")
+        .component("taskForm", taskForm);
 }());
